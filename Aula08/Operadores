@@ -1,0 +1,51 @@
+__O P E R A D O R E S__
+
+==============================================
+Ordem de Precedência
+
+()
+**
+/  %
++ - 
+================================================
+* Aritimetricos +,-,/,*,%,**
+
+================================================
+* Atribuição = +=,-=,*=,/=,**, %
+
+================================================
+* Relacionais = <,>,>=,<=,==,!=
+
+== Igual
+=== Se São identicos
+
+=================================================
+* Lógico = !,&&,||
+
+! = NEGAÇÃO
+&& = TRUE TRUE
+|| = Um sendo TRUE já é verdadeiro
+
+Ordem de Execução 
+
+1 - !
+2 - &&
+3- ||
+
+===================================================
+* Ternário = ?, :  
+
+EX: 
+
+var idade = 19       True      False
+var r = idade >= 18 'MAIOR' : 'MENOR'
+
+===================================================
+ORDEM 
+
+(), **,/   ORDEM DE PRECEDENCIA
+>,<,>=     RELACIONAIS 
+!          LOGIOS 
+&&         LOGICO
+||         LOGICO
+TERNARIO sempre no final
