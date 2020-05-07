@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+
+
+    <h1>Verifique sua Nascionalidade</h1>
+    Qual pais você nasceu: <input type="text" name="texpais" id="texpais">
+    <input type="button" value="Verificar" onclick="verifica()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function verifica() {
+            var txp = document.querySelector('input#texpais')
+            var res = document.querySelector('#res')
+            var pais = texpais.value
+            res.innerHTML = `<p>Vocé nasceu em <strong>${pais}</strong></p>`
+
+            if (pais == 'Brasil') {
+                res.innerHTML += `Você é brasileiro`
+            } else {
+                res.innerHTML += `Você é estrangeiro`
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
